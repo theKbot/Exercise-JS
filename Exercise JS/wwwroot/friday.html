@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Friday!</title>
+</head>
+<body onload=checkForFriday()>
+    <h1>IS IT FRIDAY?</h1>
+    <div>
+        It looks like..
+    </div>
+    
+    <div id="result">
+    </div>
+
+    <script>
+        function checkForFriday() {
+            var d = new Date();
+            var day = d.getDay();
+            var isFriday = "It IS Friday!! Stay up all night, drink some beers and go party hard!";
+            var isNotFriday = "It is NOT friday! Too fucking bad, man."
+            if (day == 5) {
+                document.getElementById('result').innerHTML = isFriday;
+            }
+            else {
+                document.getElementById('result').innerHTML = isNotFriday;
+            }
+        }
+    </script>
+</body>
+</html>

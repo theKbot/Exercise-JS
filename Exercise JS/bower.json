@@ -1,0 +1,25 @@
+{
+  "name": "Exercise JS",
+  "homepage": "https://github.com/theKbot/Exercise-JS",
+  "authors": [
+    "theKbot <trommewestermann@hotmail.com>"
+  ],
+  "description": "Exercise",
+  "main": "what",
+  "keywords": [
+    "Exercice",
+    "JS"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "^2.3.6"
+  }
+}

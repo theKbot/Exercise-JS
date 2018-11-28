@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>index</title>
+</head>
+<body onload=retrieveData()>
+    <h1>Saving your shiet</h1>
+    <form>
+        <div>
+            <input id='firstName' type='text' placeholder='First name here' />
+        </div>
+        <div>
+            <input id='lastName' type='text' placeholder='Last name here' />
+        </div>
+        <div>
+            <input id='phoneNr' type='text' placeholder='Phone number here' />
+        </div>
+
+        <input type="button" value="Save Credentials" onclick="createFiles()">
+    </form>
+    <script>
+        function createFiles() {
+            alert("I am an alert box!");
+            var f = document.getElementById('firstName');
+            var l = document.getElementById('lastName');
+            var p = document.getElementById('phoneNr');
+            localStorage.first = f.value;
+            localStorage.last = l.value;
+            localStorage.phone = p.value;
+        }
+
+        function retrieveData() {
+            document.getElementById('firstName').value = localStorage.first;
+            document.getElementById('lastName').value = localStorage.last;
+            document.getElementById('phoneNr').value = localStorage.phone;
+        }
+
+    </script>
+
+    <div>
+        <a href="friday.html">Click here to check for hidden fridays</a>
+    </div>
+    <div>
+        <a href="interactive.html">Click here to go to the interactive fun-house!</a>
+    </div>
+</body>
+</html>
